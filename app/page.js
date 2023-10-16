@@ -1,45 +1,24 @@
 "use client";
-import Login from "./components/Login";
-import SignIn from "./components/SignIn";
-import Content from "./components/Content";
-import { useState } from "react";
 
-const data = [
-  {
-    id: 1,
-    firstname: "Bobish",
-    lastname: "Dayal",
-    email: "bobishdayal@gmail.com",
-    password: "Yariendless@123",
-  },
-  {
-    id: 2,
-    firstname: "Varsha",
-    lastname: "Dayal",
-    email: "varshadayal@gmail.com",
-    password: "Mcbaby@123",
-  },
-];
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [userExists, setUserExits] = useState(null);
+  const router = useRouter();
 
-  const checkUserHandler = (obj) => {
-    const currentUser = data.find((user) => user.email === obj.email);
-    console.log(currentUser);
-
-    if (currentUser.password === obj.password) {
-      setUserExits(true);
-      return;
-    }
-
-    setUserExits(false);
+  const loginButtonHandler = () => {
+    router.push("/pages/signUp");
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gradient-to-t from-blue-500 to-black">
-      {!userExists && <Login onSubmit={checkUserHandler} />}
-      {userExists && <Content />}
+    <main className="flex min-h-screen  items-center justify-center p-24 bg-gradient-to-t from-blue-500 to-black">
+      <div className=" w-80 h-80  rounded-xl bg-white flex justify-center align-center bg-gradient-to-t from-transparent to-gray-500">
+        <button
+          onClick={loginButtonHandler}
+          className="m-auto p-2 border-2 border-transparent hover:bg-blue-500 hover:text-white rounded-lg border-blue-500 text-blue-500 font-bold"
+        >
+          Login
+        </button>
+      </div>
     </main>
   );
 }
