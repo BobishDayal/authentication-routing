@@ -1,5 +1,6 @@
 "use client";
 
+import Wrapper from "@/app/components/Wrapper";
 import { useRef, useState } from "react";
 
 const SignIn = () => {
@@ -27,7 +28,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-gradient-to-t from-black  to-blue-600">
+    <Wrapper>
       <div className=" w-96 h-3/5 border-2 rounded-2xl border-transparent bg-white/[.1]">
         <h4 className="font-extrabold text-4xl text-gray-50 m-7 text-center">
           Sign In
@@ -74,7 +75,7 @@ const SignIn = () => {
           />
         </form>
       </div>
-    </div>
+    </Wrapper>
   );
 };
 
