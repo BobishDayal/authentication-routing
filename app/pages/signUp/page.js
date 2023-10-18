@@ -82,7 +82,7 @@ const signUp = () => {
             Create Account
           </h3>
           <p className="text-gray-200 my-7 ">
-            Sign up if you still don't have a account.
+            Sign up if you still don't have an account.
           </p>
           <button
             onClick={() => {

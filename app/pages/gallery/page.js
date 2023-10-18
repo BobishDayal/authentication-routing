@@ -1,4 +1,5 @@
 import ImageContainer from "@/app/components/ImageContainer";
+import Data from "../../data";
 
 const Gallery = () => {
   return (
@@ -14,14 +15,9 @@ const Gallery = () => {
     >
       <h3 className="text-9xl font-extrabold text-white mx-64">Gallery</h3>
       <div className="grid grid-cols-2 gap-12 mx-32 mt-28">
-        <ImageContainer />
-        <ImageContainer />
-        <ImageContainer />
-        <ImageContainer />
-        <ImageContainer />
-        <ImageContainer />
-        <ImageContainer />
-        <ImageContainer />
+        {Data.map((info) => {
+          return <ImageContainer data={info} key={info.key} />;
+        })}
       </div>
     </div>
   );

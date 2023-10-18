@@ -49,6 +49,7 @@ const Page = () => {
       >
         <Image
           src="/assets/itachi.png"
+          alt="itachi uchiha image"
           width={180}
           height={200}
           quality={100}
