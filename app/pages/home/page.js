@@ -11,7 +11,7 @@ const Page = () => {
 
   return (
     <>
-      <nav className=" shadow-custom flex w-2/2 bg-red-600 h-20 w-full items-center justify-between  fixed top-0">
+      <nav className=" shadow-custom flex w-2/2 bg-red-600 h-20 w-full items-center justify-between  fixed top-0 z-10">
         <div className="w-16 h-16 rounded-full shadow-xl bg-gray-700 border-2 border-gray-300 hover:scale-125 ease-in duration-300 mx-20">
           <Image
             src="/assets/logo.png"
