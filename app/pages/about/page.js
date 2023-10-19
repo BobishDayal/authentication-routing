@@ -56,16 +56,39 @@ const About = () => {
             Teams
           </h4>
           <ul className="text-white text-sm list-outside list-disc text-left ml-10 mr-7 ">
-            <li className="my-7">
-              Itachi & Kisame ( to capture nine, eight & four tailed beast )
+            <li className="my-5">
+              <span className="text-base font-bold text-gray-600">
+                Itachi & Kisame{" "}
+              </span>{" "}
+              (to capture nine, eight & four tailed beast)
             </li>
-            <li>Hidan & Kakuzu ( to capture seven & two tailed beast )</li>
-            <li className="my-7">
-              Deidara & Sasori ( to capture one tailed beast )
+            <li>
+              {" "}
+              <span className="text-base font-bold text-gray-600">
+                Hidan & Kakuzu{" "}
+              </span>
+              ( to capture seven & two tailed beast )
             </li>
-            <li>Pain & Konan ( to capture six & nine tails )</li>
-            <li className="mt-7">
-              Black & White Zetsu ( to give intel about the enemy )
+            <li className="my-5">
+              <span className="text-base font-bold text-gray-600">
+                {" "}
+                Deidara & Sasori
+              </span>{" "}
+              ( to capture one tailed beast )
+            </li>
+            <li>
+              {" "}
+              <span className="text-base font-bold text-gray-600">
+                Pain & Konan{" "}
+              </span>
+              ( to capture six & nine tails )
+            </li>
+            <li className="mt-5">
+              <span className="text-base font-bold text-gray-600">
+                {" "}
+                Black & White Zetsu{" "}
+              </span>{" "}
+              ( to give intel about the enemy )
             </li>
           </ul>
         </div>
