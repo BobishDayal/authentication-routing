@@ -5,14 +5,18 @@ import { useState } from "react";
 const ImageContainer = (props) => {
   const [detailsState, setDetailsState] = useState(null);
 
-  const toggleHandler = () => {
-    setDetailsState(!detailsState);
+  const mouseEnterHandler = () => {
+    setDetailsState(true);
+  };
+
+  const mouseLeaveHandler = () => {
+    setDetailsState(false);
   };
 
   return (
     <div
-      onMouseEnter={toggleHandler}
-      onMouseLeave={toggleHandler}
+      onMouseEnter={mouseEnterHandler}
+      onMouseLeave={mouseLeaveHandler}
       className="w-52 h-56 opacity-80 rounded-3xl shadow-custom border-4 border-gray-200/[.4] hover:scale-125 duration-200 ease-out flex items-end hover:opacity-100 "
       style={{
         backgroundImage: `url(${props.data.image.src})`,
