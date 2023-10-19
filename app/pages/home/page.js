@@ -39,7 +39,7 @@ const Page = () => {
       </nav>
 
       <div
-        className=" w-full h-screen  "
+        className=" w-full h-screen "
         style={{
           backgroundImage: `url(/assets/home.png)`,
           backgroundSize: "76% 90%",
