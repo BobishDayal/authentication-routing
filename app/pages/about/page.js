@@ -4,7 +4,7 @@ const About = () => {
       <h2 className="text-white font-extrabold text-7xl text-center mt-40">
         AKATSUKI
       </h2>
-      <p className="text-gray-300 m-10 text-center">
+      <p className="text-gray-300 m-16 mt-10 text-center">
         Akatsuki 暁 is a criminal organization made up of S-Class fugitive ninja
         and highly wanted by the ninja world. Their main objective is to collect
         all biju or "Tailed Creatures" for the purpose of dominating the world.
@@ -30,61 +30,61 @@ const About = () => {
         className=" grid grid-cols-3 gap-20 px-24
        h-96"
       >
-        <div className="border-white border-2 rounded-3xl">
-          <h4 className="text-white text-center my-8 text-2xl font-bold">
+        <div className="border-white/[.6] border-4 rounded-3xl">
+          <h4 className="text-red-500/[.7] text-center my-8 text-2xl font-bold">
             Main Objective
           </h4>
-          <ul className="text-white text-sm list-outside list-disc text-left ml-10 mr-7 ">
+          <ul className="text-slate-300 text-sm list-outside list-disc text-left ml-10 mr-7 ">
             <li className="my-7">
               To attain the power by capturing all tailed beast.
             </li>
             <li>
-              obtain a large amount of money to support their organization.
+              Obtain a large amount of money to support their organization.
             </li>
             <li className="my-7">
               Set up a mercenary group loyal only to Akatsuki.
             </li>
             <li>
-              build their reputation, they plan to accept any mission below the
+              Build their reputation, they plan to accept any mission below the
               usual cost and operate off of the excess funds earned in the first
               part of their plan.
             </li>
           </ul>
         </div>
-        <div className="border-white border-2  rounded-3xl">
-          <h4 className="text-white text-center my-7 text-2xl font-bold">
+        <div className="border-white/[.6] border-4  rounded-3xl">
+          <h4 className="text-red-500/[.7]  text-center my-7 text-2xl font-bold">
             Teams
           </h4>
-          <ul className="text-white text-sm list-outside list-disc text-left ml-10 mr-7 ">
+          <ul className="text-gray-400 text-sm list-outside list-disc text-left ml-10 mr-7 ">
             <li className="my-5">
-              <span className="text-base font-bold text-gray-600">
+              <span className="text-base font-bold text-slate-300">
                 Itachi & Kisame{" "}
               </span>{" "}
-              (to capture nine, eight & four tailed beast)
+              ( to capture nine, eight & four tailed beast )
             </li>
             <li>
               {" "}
-              <span className="text-base font-bold text-gray-600">
+              <span className="text-base font-bold text-slate-300">
                 Hidan & Kakuzu{" "}
               </span>
               ( to capture seven & two tailed beast )
             </li>
             <li className="my-5">
-              <span className="text-base font-bold text-gray-600">
+              <span className="text-base font-bold text-slate-300">
                 {" "}
                 Deidara & Sasori
               </span>{" "}
-              ( to capture one tailed beast )
+              ( to capture one tail beast )
             </li>
             <li>
               {" "}
-              <span className="text-base font-bold text-gray-600">
+              <span className="text-base font-bold text-slate-300">
                 Pain & Konan{" "}
               </span>
               ( to capture six & nine tails )
             </li>
             <li className="mt-5">
-              <span className="text-base font-bold text-gray-600">
+              <span className="text-base font-bold text-slate-300">
                 {" "}
                 Black & White Zetsu{" "}
               </span>{" "}
@@ -92,10 +92,29 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="border-white border-2  rounded-3xl">
-          <h4 className="text-white text-center my-4 text-2xl font-bold">
-            Identity
+        <div className="border-white/[.6] border-4  rounded-3xl">
+          <h4 className="text-red-500/[.7]  text-center my-7 text-2xl font-bold">
+            Achievements
           </h4>
+          <ul className="text-slate-300 text-sm list-outside list-disc text-left ml-10 mr-7 ">
+            <li className="mb-4">
+              Pain the leader of ataksuki succesfully infiltrated the leaf
+              village and destroyed it.
+            </li>
+            <li>Akatsuki captured all tailed beast except nine tails.</li>
+            <li className="my-4">
+              under the influence of obito and black zetsu they revived gedo
+              statue.
+            </li>
+            <li>
+              {" "}
+              They succesfully managed to obtain the village hidden in the rain
+              and rule over it.
+            </li>
+            <li className=" mt-4">
+              Paths of pain killed one of the legendary sanin Jiraya.
+            </li>
+          </ul>
         </div>
       </div>
     </div>

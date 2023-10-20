@@ -4,7 +4,7 @@ import Data from "../../data";
 const Gallery = () => {
   return (
     <div
-      className=" w-full flex flex-col items-end justify-center my-8 opacity-80"
+      className=" w-full flex flex-col items-end justify-center my-36 opacity-80"
       style={{
         backgroundImage: `url(/assets/pain.png)`,
         backgroundSize: "80% 100%",

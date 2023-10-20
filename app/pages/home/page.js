@@ -11,7 +11,7 @@ const Page = () => {
 
   return (
     <>
-      <nav className=" shadow-custom flex w-2/2 bg-red-600 h-20 w-full items-center justify-between  fixed top-0 z-10">
+      <nav className=" shadow-custom flex w-2/2 bg-black/[.5] h-20 w-full items-center justify-between  fixed top-0 z-10">
         <div className="w-16 h-16 rounded-full shadow-xl bg-gray-700 border-2 border-gray-300 hover:scale-125 ease-in duration-300 mx-20">
           <Image
             src="/assets/logo.png"
@@ -25,8 +25,8 @@ const Page = () => {
         </div>
         <ul className="flex text-gray-100 ">
           <li className="font-bold text-lg mx-12">Home</li>
-          <li className="font-bold text-lg mx-12">Gallery</li>
           <li className="font-bold text-lg mx-12">About</li>
+          <li className="font-bold text-lg mx-12">Members</li>
           <li className="font-bold text-lg mx-12">Contact</li>
         </ul>
 
@@ -41,25 +41,12 @@ const Page = () => {
       <div
         className=" w-full h-screen "
         style={{
-          backgroundImage: `url(/assets/home.png)`,
-          backgroundSize: "76% 90%",
+          backgroundImage: `url(/assets/home.jpg)`,
+          backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom",
         }}
-      >
-        <Image
-          src="/assets/itachi.png"
-          alt="itachi uchiha image"
-          width={180}
-          height={200}
-          quality={100}
-          style={{
-            position: "absolute",
-            left: "43%",
-            bottom: "27%",
-          }}
-        />
-      </div>
+      ></div>
     </>
   );
 };
